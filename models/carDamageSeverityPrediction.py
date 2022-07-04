@@ -23,5 +23,5 @@ def damagePrediction(imageBase64Encoded, model):
         
 def detectDamageSeverity(args):
     imageBase64Encoded = args["imageBase64"]
-    model = keras.models.load_model('carDamageSeverityPredictionModel.h5')
+    model = keras.models.load_model('models/carDamageSeverityPredictionModel.h5')
     return damagePrediction(imageBase64Encoded, model)
